@@ -1,20 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import styled from 'react-emotion';
-import { Flex } from 'grid-emotion';
-import Footer from '../components/Footer';
-import Layout from '../components/Layout';
-import GridItem from '../components/GridItem';
-import BeTheHero from '../images/be_the_hero.svg';
-import DataReport from '../images/data_report.svg';
-import MayTheForce from '../images/may_the_force.svg';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import styled from "react-emotion";
+import { Flex } from "grid-emotion";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
+import GridItem from "../components/GridItem";
+import BeTheHero from "../images/be_the_hero.svg";
+import DataReport from "../images/data_report.svg";
+import MayTheForce from "../images/may_the_force.svg";
 
 const Header = styled.header`
   width: 100%;
-  height: 900px;
+  height: 100vh;
   position: relative;
   padding: 1.75rem;
+  background: linear-gradient(90deg, #6d4d9f, #00bfd9);
   @media (max-width: ${props => props.theme.breakpoint.s}) {
     height: 700px;
   }
@@ -31,17 +32,18 @@ const Logo = styled.h2`
 `;
 
 const Hero = styled(Flex)`
-  height: 100%;
+  height: 100vh;
   text-align: center;
   h1 {
     letter-spacing: 0.2rem;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
   }
   h3 {
     font-family: ${props => props.theme.fontFamily.body};
     margin-top: 2rem;
     font-size: 1.85rem;
     font-weight: 400;
+    line-height: 2.5rem;
   }
   @media (max-width: ${props => props.theme.breakpoint.m}) {
     h1 {
@@ -49,6 +51,7 @@ const Hero = styled(Flex)`
     }
     h3 {
       font-size: 1.5rem;
+      line-height: 1.75rem;
     }
   }
   @media (max-width: ${props => props.theme.breakpoint.s}) {
@@ -57,6 +60,7 @@ const Hero = styled(Flex)`
     }
     h3 {
       font-size: 1.3rem;
+      line-height: 1.5rem;
     }
   }
 `;
@@ -115,7 +119,7 @@ const ServiceText = styled.div`
     margin-left: 0;
   }
   li:before {
-    content: '－';
+    content: "－";
     padding-right: 8px;
   }
 `;
@@ -140,20 +144,28 @@ const Contact = styled(Wrapper)`
 
 const IndexPage = ({
   data: {
-    caseStudies: { edges },
-  },
+    caseStudies: { edges }
+  }
 }) => (
   <Layout>
     <Header>
-      <Logo>Bella Inc.</Logo>
+      <Logo>Lauren4c</Logo>
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
-        <h1>
-          We design and develop <br /> noice web applications.
-        </h1>
-        <h3>Hi, Bella Inc., the human form of the 💯 Emoji.</h3>
+        <h1>Hey there!</h1>
+        <h3>
+          My name is Lauren and I am a designer and developer.
+          <br />
+          Let's create something amazing together.
+        </h3>
       </Hero>
     </Header>
-    <Wrapper p={4} mb={[4, 4, 7]} mx="auto" justifyContent="space-between" flexWrap="wrap">
+    <Wrapper
+      p={4}
+      mb={[4, 4, 7]}
+      mx="auto"
+      justifyContent="space-around"
+      flexWrap="wrap"
+    >
       {edges.map(c => (
         <GridItem
           uid={c.node.uid}
@@ -174,10 +186,13 @@ const IndexPage = ({
           <ServiceText>
             <h2>Be your own hero</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-              ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-              a paradisematic country, in which roasted parts of sentences fly into your mouth.
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
             </p>
             <ul>
               <li>Service Super</li>
@@ -186,16 +201,24 @@ const IndexPage = ({
             </ul>
           </ServiceText>
         </Flex>
-        <Flex w={1} py={5} justifyContent="space-between" flexDirection="row-reverse" flexWrap="wrap">
+        <Flex
+          w={1}
+          py={5}
+          justifyContent="space-between"
+          flexDirection="row-reverse"
+          flexWrap="wrap"
+        >
           <ServiceImage>
             <img src={DataReport} alt="Data Report" />
           </ServiceImage>
           <ServiceText>
             <h2>We love charts!</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-              ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia.
             </p>
             <ul>
               <li>Service Super</li>
@@ -211,9 +234,10 @@ const IndexPage = ({
           <ServiceText>
             <h2>May the force be with you</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-              ocean.
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
             </p>
             <ul>
               <li>Service Super</li>
@@ -223,9 +247,15 @@ const IndexPage = ({
         </Flex>
       </Wrapper>
     </PrimaryBG>
-    <Contact px={4} py={6} justifyContent="center" alignItems="center" flexDirection="column">
+    <Contact
+      px={4}
+      py={6}
+      justifyContent="center"
+      alignItems="center"
+      flexDirection="column"
+    >
       <h1>Say hi!</h1>
-      <h3>contact@domain.com</h3>
+      <h3>Lauren4c@gmail.com</h3>
     </Contact>
     <Footer />
   </Layout>
@@ -236,14 +266,16 @@ export default IndexPage;
 IndexPage.propTypes = {
   data: PropTypes.shape({
     caseStudies: PropTypes.shape({
-      edges: PropTypes.array.isRequired,
-    }),
-  }).isRequired,
+      edges: PropTypes.array.isRequired
+    })
+  }).isRequired
 };
 
 export const pageQuery = graphql`
   query IndexQuery {
-    caseStudies: allPrismicCaseStudy(sort: { fields: [last_publication_date], order: DESC }) {
+    caseStudies: allPrismicCaseStudy(
+      sort: { fields: [last_publication_date], order: DESC }
+    ) {
       edges {
         node {
           uid

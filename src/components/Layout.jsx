@@ -1,12 +1,12 @@
 /* eslint no-unused-expressions: 0 */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { injectGlobal } from 'react-emotion';
-import { ThemeProvider } from 'emotion-theming';
+import React from "react";
+import PropTypes from "prop-types";
+import { injectGlobal } from "react-emotion";
+import { ThemeProvider } from "emotion-theming";
 
-import SEO from './SEO';
-import theme from '../../config/theme';
+import SEO from "./SEO";
+import theme from "../../config/theme";
 
 injectGlobal`
   *, *:before, *:after {
@@ -19,10 +19,12 @@ injectGlobal`
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     h1, h2, h3, h4, h5, h6 {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.textInvert};
     }
   }
-  @media (max-width: ${theme.breakpoint.m}), (max-device-width: ${theme.breakpoint.m}) {
+  @media (max-width: ${theme.breakpoint.m}), (max-device-width: ${
+  theme.breakpoint.m
+}) {
     html {
       font-size: 16px !important;
       h1 {
@@ -42,7 +44,9 @@ injectGlobal`
       }
     }
   }
-  @media (max-width: ${theme.breakpoint.s}), (max-device-width: ${theme.breakpoint.s}) {
+  @media (max-width: ${theme.breakpoint.s}), (max-device-width: ${
+  theme.breakpoint.s
+}) {
     html {
       h1 {
         font-size: 2.441rem
@@ -100,7 +104,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired
 };
 
 export default Layout;
