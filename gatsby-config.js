@@ -19,7 +19,8 @@ module.exports = {
       resolve: "gatsby-source-prismic",
       options: {
         repositoryName: "forcey-projects",
-        accessToken: `${process.env.API_KEY}`,
+        accessToken:
+          "MC5YSFZiY0JFQUFIcjVFSHpw.77-9IO-_ve-_vRbvv73vv73vv71477-9cu-_ve-_ve-_vWbvv73vv73vv73vv73vv73vv73vv70MOAc877-977-977-977-9clg",
         linkResolver: ({ node, key, value }) => doc => `/${doc.uid}`,
         htmlSerializer: ({ node, key, value }) => (
           type,

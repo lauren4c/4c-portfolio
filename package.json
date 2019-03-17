@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-bella",
-  "description": "Gatsby Starter Portfolio Bella",
-  "version": "2.0.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "name": "lauren-forcey-portfolio",
+  "description": "Design & Development portfolio for Lauren Forcey",
+  "version": "1.0.0",
+  "author": "Lauren Forcey <lauren@laurenforcey.com>",
   "dependencies": {
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
@@ -34,9 +34,9 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-portfolio",
-    "lekoarts",
+    "react",
+    "Design & Development",
+    "Lauren Forcey",
     "prismic"
   ],
   "license": "MIT",

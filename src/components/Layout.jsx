@@ -20,6 +20,9 @@ injectGlobal`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     h1, h2, h3, h4, h5, h6 {
       color: ${theme.colors.textInvert};
+    };
+    ion-icon {
+      font-size: 2rem;
     }
   }
   @media (max-width: ${theme.breakpoint.m}), (max-device-width: ${

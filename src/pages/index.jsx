@@ -6,9 +6,7 @@ import { Flex } from "grid-emotion";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import GridItem from "../components/GridItem";
-import BeTheHero from "../images/be_the_hero.svg";
-import DataReport from "../images/data_report.svg";
-import MayTheForce from "../images/may_the_force.svg";
+import Headshot from "../images/headshot-circle.png";
 
 const Header = styled.header`
   width: 100%;
@@ -86,7 +84,7 @@ const ServiceImage = styled.div`
   width: calc(99.9% * 4 / 7 - 5rem);
   text-align: center;
   img {
-    width: 90%;
+    width: 80%;
     margin-bottom: 2rem;
   }
   @media (max-width: ${props => props.theme.breakpoint.l}) {
@@ -122,6 +120,13 @@ const ServiceText = styled.div`
     content: "－";
     padding-right: 8px;
   }
+
+  h4:before {
+    line-height: 1rem;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const Contact = styled(Wrapper)`
@@ -149,7 +154,6 @@ const IndexPage = ({
 }) => (
   <Layout>
     <Header>
-      <Logo>Lauren4c</Logo>
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Hey there!</h1>
         <h3>
@@ -159,12 +163,13 @@ const IndexPage = ({
         </h3>
       </Hero>
     </Header>
+
     <Wrapper
-      p={4}
+      p={3}
       mb={[4, 4, 7]}
       mx="auto"
       justifyContent="space-around"
-      flexWrap="wrap"
+      flexWrap="wrap-reverse"
     >
       {edges.map(c => (
         <GridItem
@@ -181,67 +186,33 @@ const IndexPage = ({
       <Wrapper flexDirection="column" p={4} mx="auto">
         <Flex w={1} py={5} justifyContent="space-between" flexWrap="wrap">
           <ServiceImage>
-            <img src={BeTheHero} alt="Be The Hero" />
+            <img src={Headshot} alt="Lauren Forcey headshot" />
           </ServiceImage>
           <ServiceText>
-            <h2>Be your own hero</h2>
+            <h2>Who is Lauren Forcey, anyway?</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of sentences fly
-              into your mouth.
+              I'm so glad you asked! I'm a thoughtful and curious graphic
+              designer turned front end developer now ready to take on all
+              things print and web! I love problem-solving and live by the "less
+              is more" concept. Responsive, clean code and designs are what make
+              me smile, as do my two dogs and cat. Let's hit the trail or chat
+              over a coffee or beer about your next project we can tackle
+              together. My skill tacklebox includes:
             </p>
             <ul>
-              <li>Service Super</li>
-              <li>Great Offer</li>
-              <li>Item Wrap</li>
-            </ul>
-          </ServiceText>
-        </Flex>
-        <Flex
-          w={1}
-          py={5}
-          justifyContent="space-between"
-          flexDirection="row-reverse"
-          flexWrap="wrap"
-        >
-          <ServiceImage>
-            <img src={DataReport} alt="Data Report" />
-          </ServiceImage>
-          <ServiceText>
-            <h2>We love charts!</h2>
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia.
-            </p>
-            <ul>
-              <li>Service Super</li>
-              <li>Great Offer</li>
-              <li>Item Wrap</li>
-            </ul>
-          </ServiceText>
-        </Flex>
-        <Flex w={1} py={5} justifyContent="space-between" flexWrap="wrap">
-          <ServiceImage>
-            <img src={MayTheForce} alt="May the Force" />
-          </ServiceImage>
-          <ServiceText>
-            <h2>May the force be with you</h2>
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean.
-            </p>
-            <ul>
-              <li>Service Super</li>
-              <li>Great Offer</li>
+              <h4>Computer Languages:</h4>
+              <li>
+                JavaScript (ES6+), HTML5, CSS3, Git & GitHub, Heroku, Netlify
+              </li>
+              <h4> Frameworks/Libraries:</h4>
+              <li>React.js, Gastby, jQuery, NPM, Webpack</li>
+              <h4>Databases/Back-End:</h4>
+              <li>Node.js, PostgresSQL</li>
+              <h4>Design:</h4>
+              <li>
+                Adobe Creative Suite, Graphic Design, Publication & Ad Design,
+                Project Management
+              </li>
             </ul>
           </ServiceText>
         </Flex>
@@ -254,8 +225,10 @@ const IndexPage = ({
       alignItems="center"
       flexDirection="column"
     >
-      <h1>Say hi!</h1>
-      <h3>Lauren4c@gmail.com</h3>
+      <h1>Let's Chat!</h1>
+      <h3>
+        <a href="mailto:lauren@laurenforcey.com">Lauren@LaurenForcey.com</a>
+      </h3>
     </Contact>
     <Footer />
   </Layout>

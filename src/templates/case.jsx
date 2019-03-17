@@ -1,18 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
-import styled from 'react-emotion';
-import Img from 'gatsby-image';
-import { Box } from 'grid-emotion';
-import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import SEO from '../components/SEO';
-import config from '../../config/website';
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Helmet from "react-helmet";
+import styled from "react-emotion";
+import Img from "gatsby-image";
+import { Box } from "grid-emotion";
+import Layout from "../components/Layout";
+import Footer from "../components/Footer";
+import SEO from "../components/SEO";
+import config from "../../config/website";
 
 const Hero = styled.section`
-  width: 100%;
-  height: 100vh;
+  width: 85%;
+  height: 80vh;
+  margin: auto;
   position: relative;
   overflow: hidden;
   .gatsby-image-outer-wrapper {
@@ -116,8 +117,8 @@ export default CaseTemplate;
 
 CaseTemplate.propTypes = {
   data: PropTypes.shape({
-    prismicCaseStudy: PropTypes.object.isRequired,
-  }).isRequired,
+    prismicCaseStudy: PropTypes.object.isRequired
+  }).isRequired
 };
 
 export const pageQuery = graphql`
@@ -130,7 +131,11 @@ export const pageQuery = graphql`
         header_image {
           localFile {
             childImageSharp {
-              fluid(maxWidth: 1920, quality: 90, traceSVG: { color: "#021212" }) {
+              fluid(
+                maxWidth: 1920
+                quality: 90
+                traceSVG: { color: "#021212" }
+              ) {
                 ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
               resize(width: 800) {

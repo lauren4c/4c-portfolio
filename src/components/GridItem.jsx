@@ -1,22 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
-import styled from 'react-emotion';
-import { Flex } from 'grid-emotion';
-import { rgba } from 'polished';
-import { randomNumber } from '../utils/randomNumber';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
+import styled from "react-emotion";
+import { Flex } from "grid-emotion";
+import { rgba } from "polished";
+import { randomNumber } from "../utils/randomNumber";
 
 const Item = styled(Flex)`
-  flex-basis: calc(99.9% * 1 / 2 - 4rem);
-  max-width: calc(99.9% * 1 / 2 - 4rem);
-  width: calc(99.9% * 1 / 2 - 4rem);
+  flex-basis: calc(90% * 1 / 2 - 4rem);
+  max-width: calc(90% * 1 / 2 - 4rem);
+  width: calc(99% * 1 / 2 - 4rem);
   text-align: center;
   position: relative;
+  margin-top: 4rem;
   @media (max-width: ${props => props.theme.breakpoint.m}) {
-    flex-basis: 100%;
-    max-width: 100%;
-    width: 100%;
+    flex-basis: 90%;
+    max-width: 90%;
+    width: 90%;
     margin-top: 3rem !important;
   }
 `;
@@ -95,11 +96,19 @@ const StyledLink = styled(Link)`
 `;
 
 const GridItem = ({ uid, image, alt, title, subtitle }) => (
-  <Item flexDirection="column" key={uid} style={{ marginTop: `${randomNumber(4, 8) * 2}rem` }}>
+  <Item
+    flexDirection="column"
+    key={uid}
+    //style={{ marginTop: `${randomNumber(4, 8) * 2}rem` }}
+  >
     <StyledLink to={uid}>
-      <Overlay justifyContent="center" alignItems="center" flexDirection="column">
+      <Overlay
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+      >
         <span>view</span>
-        <span>case study</span>
+        <span>project</span>
       </Overlay>
       <Img fluid={image} alt={alt} />
     </StyledLink>
@@ -115,5 +124,5 @@ GridItem.propTypes = {
   image: PropTypes.any.isRequired,
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired
 };
