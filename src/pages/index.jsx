@@ -9,10 +9,8 @@ import GridItem from "../components/GridItem";
 import Headshot from "../images/headshot-circle.png";
 import ReactGA from "react-ga";
 
-function initializeReactGA() {
-  ReactGA.initialize("UA-127104527-1");
-  ReactGA.pageview("/");
-}
+ReactGA.initialize("UA-127104527-1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Header = styled.header`
   width: 100%;
