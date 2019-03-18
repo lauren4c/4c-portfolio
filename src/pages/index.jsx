@@ -195,8 +195,8 @@ const IndexPage = ({
             <p>
               I'm so glad you asked! I'm a thoughtful and curious graphic
               designer turned front end developer now ready to take on all
-              things print and web! I love problem-solving and live by the 'less
-              is more' concept. Responsive, clean code and designs are what make
+              things print and web! I love problem-solving and live by the less-
+              is-more concept. Responsive, clean code and designs are what make
               me smile, as do my two dogs and cat. Let's hit the trail or chat
               over a coffee or beer about your next project we can tackle
               together. My skill tacklebox includes:
