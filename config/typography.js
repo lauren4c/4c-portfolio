@@ -18,7 +18,7 @@ const typography = new Typography({
     "Segoe UI Symbol"
   ],
   bodyFontFamily: [
-    "Open Sans",
+    "Catamaran",
     "-apple-system",
     "BlinkMacSystemFont",
     "Segoe UI",
@@ -36,7 +36,7 @@ const typography = new Typography({
       styles: ["400"]
     },
     {
-      name: "Open Sans",
+      name: "Catamaran",
       styles: ["400"]
     }
   ],

@@ -33,7 +33,7 @@ const Hero = styled(Flex)`
   height: 100vh;
   text-align: center;
   h1 {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     line-height: 3.5rem;
   }
   h3 {
@@ -46,6 +46,7 @@ const Hero = styled(Flex)`
   @media (max-width: ${props => props.theme.breakpoint.m}) {
     h1 {
       line-height: 3.5rem;
+      letter-spacing: 0rem;
     }
     h3 {
       font-size: 1.5rem;
@@ -55,10 +56,11 @@ const Hero = styled(Flex)`
   @media (max-width: ${props => props.theme.breakpoint.s}) {
     h1 {
       line-height: 2.5rem;
+      letter-spacing: 0rem;
     }
     h3 {
       font-size: 1.3rem;
-      line-height: 1.5rem;
+      line-height: 1.75rem;
     }
   }
 `;
