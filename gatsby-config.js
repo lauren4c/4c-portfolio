@@ -66,6 +66,30 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-127104527-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: false
+        // Avoids sending pageview hits from custom paths
+        //  exclude: [""],
+        // Enables Google Optimize using your container Id
+        //  optimizeId: "UA-127104527-1",
+        // Enables Google Optimize Experiment ID
+        //experimentId: "0",
+        // Set Variation ID. 0 for original 1,2,3....
+        //  variationId: "0",
+        // Any additional create only fields (optional)
+        //  sampleRate: 5,
+        //siteSpeedSampleRate: 10,
+        //cookieDomain: "laurenforcey.com"
+      }
+    },
     /* Must be placed at the end */
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify"
