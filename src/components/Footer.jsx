@@ -66,7 +66,7 @@ const Footer = ({ isCase }) => {
             <div>
               Copyright &copy; {year} by{" "}
               <a href="lauren@laurenforcey.com">Lauren Forcey</a>. Built with{" "}
-              <a href="https://www.gatsbyjs.org/">Gastby</a> on top of{" "}
+              <a href="https://www.gatsbyjs.org/">Gatsby</a> on top of{" "}
               <a href="https://reactjs.org/">React</a>, utilizing{" "}
               <a href="http://prismic.io">Prismic.io</a>.
             </div>
