@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "^2.0.7",
     "gatsby-source-prismic": "^2.1.0",
     "gatsby-transformer-sharp": "^2.1.7",
+    "graphql": "^14.1.1",
     "grid-emotion": "^3.2.0",
     "lodash": "^4.17.11",
     "polished": "^2.3.0",
@@ -28,6 +29,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-emotion": "^9.2.12",
+    "react-ga": "^2.5.7",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"

@@ -7,6 +7,12 @@ import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import GridItem from "../components/GridItem";
 import Headshot from "../images/headshot-circle.png";
+import ReactGA from "react-ga";
+
+function initializeReactGA() {
+  ReactGA.initialize("UA-127104527-1");
+  ReactGA.pageview("/");
+}
 
 const Header = styled.header`
   width: 100%;
