@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    primary: "#6724b5",
+    primary: "#6724b5", //royal purple
     primaryLight: "#c39eef",
     primaryDark: "#210b3d",
     bg: "#fff", //white
@@ -11,7 +11,7 @@ const theme = {
     greyDark: "#2F2F2F"
   },
   fontFamily: {
-    body: `'Catamaran', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    body: `'Heebo', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
     heading: `'Bree Serif', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`
   },
   maxWidth: "1800px",
