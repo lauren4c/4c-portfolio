@@ -159,7 +159,7 @@ const IndexPage = ({
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Hey there!</h1>
         <h3>
-          My name is Lauren and I am a designer and developer.
+          My name is Lauren and I am a full-stack web developer and designer.
           <br />
           Let's create something amazing together.
         </h3>
@@ -171,7 +171,7 @@ const IndexPage = ({
       mb={[4, 4, 7]}
       mx="auto"
       justifyContent="space-around"
-      flexWrap="wrap-reverse"
+      flexWrap="wrap"
     >
       {edges.map(c => (
         <GridItem
@@ -194,12 +194,12 @@ const IndexPage = ({
             <h2>Who is Lauren Forcey, anyway?</h2>
             <p>
               I'm so glad you asked! I'm a thoughtful and curious graphic
-              designer turned front end developer now ready to take on all
+              designer turned full-stack web developer now ready to take on all
               things print and web! I love problem-solving and live by the less-
-              is-more concept. Responsive, clean code and designs are what make
-              me smile, as do my two dogs and cat. Let's hit the trail or chat
-              over a coffee or beer about your next project we can tackle
-              together. My skill tacklebox includes:
+              is-more concept. Responsive, clean code & designs are what make me
+              smile, as do my two dogs and cat. Let's hit the trail or chat over
+              a coffee or beer about your next project we can tackle together.
+              My skill tacklebox includes:
             </p>
             <ul>
               <h4>Computer Languages:</h4>
@@ -209,7 +209,7 @@ const IndexPage = ({
               <h4> Frameworks/Libraries:</h4>
               <li>React.js, Gatsby, jQuery, NPM, Webpack</li>
               <h4>Databases/Back-End:</h4>
-              <li>Node.js, PostgresSQL</li>
+              <li>Node.js, PostgresSQL, Firebase</li>
               <h4>Design:</h4>
               <li>
                 Adobe Creative Suite, Graphic Design, Publication & Ad Design,
