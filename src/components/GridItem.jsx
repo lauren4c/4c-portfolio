@@ -25,8 +25,8 @@ const Item = styled(Flex)`
 const ItemTitle = styled.h3`
   color: ${props => props.theme.colors.text};
   font-size: 2rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
   transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
   transform: translateY(0rem);
 `;
@@ -104,7 +104,7 @@ const GridItem = ({ uid, image, alt, title, subtitle }) => (
         flexDirection="column"
       >
         <span>view</span>
-        <span>project</span>
+        <span>Project</span>
       </Overlay>
       <Img fluid={image} alt={alt} />
     </StyledLink>

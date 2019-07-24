@@ -191,6 +191,17 @@ const Contact = styled(Wrapper)`
   }
 `;
 
+const ProjectHeader = styled.div`
+  text-align: center;
+  h2 {
+    color: ${props => props.theme.colors.primary};
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    align: center;
+  }
+`;
+
 const IndexPage = ({
   data: {
     caseStudies: { edges }
@@ -201,13 +212,22 @@ const IndexPage = ({
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Hey there!</h1>
         <h3>
-          My name is Lauren and I am a full-stack web developer and designer.
+          My name is Lauren and I am seeking a product management opportunity to{" "}
+          <br />
+          leverage my design, management, and development background.
+          <br />
           <br />
           Let's create something amazing together.
         </h3>
       </Hero>
     </Header>
-
+    <ProjectHeader
+      justifyContent="center"
+      alignItems="center"
+      flexDirection="column"
+    >
+      <h2>Portfolio</h2>
+    </ProjectHeader>
     <Wrapper
       p={3}
       mb={[4, 4, 7]}
@@ -236,12 +256,10 @@ const IndexPage = ({
             <h2>Who is Lauren Forcey, anyway?</h2>
             <p>
               I'm so glad you asked! I'm a thoughtful and curious graphic
-              designer turned full-stack web developer now ready to take on all
-              things print and web! I love problem-solving and live by the less-
-              is-more concept. Responsive, clean code & designs are what make me
-              smile, as do my two dogs and cat. Let's hit the trail or chat over
-              a coffee or beer about your next project we can tackle together.
-              My skill tacklebox includes:
+              designer and full-stack web developer turned product manager. I
+              love technical challeneges, and enjoy problem-solving to
+              streamline user-flow through technology. My skill tacklebox
+              includes:
             </p>
             <ul>
               <h4>Computer Languages:</h4>

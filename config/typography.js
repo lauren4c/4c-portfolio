@@ -1,7 +1,7 @@
 import Typography from "typography";
 
 const typography = new Typography({
-  title: "Lauren Forcey - Creative Designer & Developer",
+  title: "Lauren Forcey - Creative Product Manager",
   baseFontSize: "18px",
   baseLineHeight: 1.5,
   headerFontFamily: [

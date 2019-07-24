@@ -3,7 +3,7 @@ const theme = {
     primary: "#6724b5", //royal purple
     primaryLight: "#c39eef",
     primaryDark: "#210b3d",
-    bg: "#fff", //white
+    bg: "#fff",
     text: "#021212", //really dark teal, almost black
     textInvert: "#fff", //white
     greyLight: "#B4B9C1",
