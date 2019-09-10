@@ -212,12 +212,9 @@ const IndexPage = ({
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Hey there!</h1>
         <h3>
-          My name is Lauren and I am seeking a product management opportunity to{" "}
+          My name is Lauren. I'm a Designer / Developer / Product Manager.
           <br />
-          leverage my design, management, and development background.
-          <br />
-          <br />
-          Let's create something amazing together.
+          Let's create something awesome together.
         </h3>
       </Hero>
     </Header>
@@ -262,7 +259,7 @@ const IndexPage = ({
               includes:
             </p>
             <ul>
-              <h4>Computer Languages:</h4>
+              <h4>Computer Languages & Platforms:</h4>
               <li>
                 JavaScript (ES6+), HTML5, CSS3, Git & GitHub, Heroku, Netlify
               </li>
