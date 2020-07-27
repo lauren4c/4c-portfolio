@@ -212,7 +212,7 @@ const IndexPage = ({
       <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>Hey there!</h1>
         <h3>
-          My name is Lauren. I'm a Designer / Developer / Product Manager.
+          My name is Lauren. I'm a Frontend Developer & Designer.
           <br />
           Let's create something awesome together.
         </h3>
@@ -253,24 +253,21 @@ const IndexPage = ({
             <h2>Who is Lauren Forcey, anyway?</h2>
             <p>
               I'm so glad you asked! I'm a thoughtful and curious graphic
-              designer and full-stack web developer turned product manager. I
-              love technical challeneges, and enjoy problem-solving to
-              streamline user-flow through technology. My skill tacklebox
+              designer turned frontend developer. I have a passion for using design and technology to solve big, technical problems beautifully. I'm organized and analytical while being user- and delivery-focused.  My skill tacklebox
               includes:
             </p>
             <ul>
               <h4>Computer Languages & Platforms:</h4>
               <li>
-                JavaScript (ES6+), HTML5, CSS3, Git & GitHub, Heroku, Netlify
+                JavaScript (ES6+), HTML, CSS, SQL, PHP
               </li>
               <h4> Frameworks/Libraries:</h4>
-              <li>React.js, Gatsby, jQuery, NPM, Webpack</li>
+              <li>React.js, Vue.js</li>
               <h4>Databases/Back-End:</h4>
-              <li>Node.js, PostgresSQL, Firebase</li>
-              <h4>Design:</h4>
+              <li>Node.JS, Express, Sequelize, Jasmine, PostgreSQL, Google Firebase</li>
+              <h4>Tools:</h4>
               <li>
-                Adobe Creative Suite, Graphic Design, Publication & Ad Design,
-                Project Management
+                Git & GitHub, Heroku, Netlify, Bootstrap, ESLint, NPM, Webpack, Adobe CC, Figma
               </li>
             </ul>
           </ServiceText>
