@@ -28,3 +28,5 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 };
+
+const resolvableExtensions = () => [`.ts`, `.tsx`]
