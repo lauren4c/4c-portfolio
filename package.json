@@ -1,7 +1,7 @@
 {
   "name": "lauren-forcey-portfolio",
   "description": "Design & Development portfolio for Lauren Forcey",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "Lauren Forcey <lauren@laurenforcey.com>",
   "dependencies": {
     "core-js": "^3.6.5",
