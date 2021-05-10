@@ -25,7 +25,7 @@
     "gatsby-transformer-sharp": "^2.2.14",
     "graphql": "^14.5.4",
     "grid-emotion": "^3.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "polished": "^2.3.0",
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
